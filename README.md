@@ -18,3 +18,25 @@ Usage:
     	-d <int> : dimension of points (standard=2)
     	-s <int> : seed for generating random points (standard=time())
     	-name <string> : name of point set (standard="")
+
+For example, running `./STPGenerator spheresurface -n 5 -d 2 -name Circle` will output the following to stdout:
+
+    33D32945 STP File, STP Format Version 1.0
+    
+    SECTION Comments
+    Name "Circle"
+    Problem "Euclidean Steiner Tree Problem"
+    Remark "Generated with STPGenerator. 2 dimensions."
+    END
+    
+    SECTION Graph
+    Nodes 5
+    END
+    
+    SECTION Coordinates
+    DD 0.2394268165 0.9709144141
+    DD -0.9850239519 0.1724175578
+    DD -0.4381797079 0.8988873921
+    DD 0.1382872742 -0.9903921596
+    DD -0.6461654211 -0.7631973851
+    END`
