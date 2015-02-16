@@ -3,6 +3,8 @@
 #include <vector>
 #include <time.h>
 #include <math.h>
+#include <cstdlib>
+#include <cstdio>
 
 using namespace std;
 
