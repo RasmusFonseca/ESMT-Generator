@@ -109,6 +109,7 @@ void printCube(int n, int d, string &name)
         for(int j=0;j<d;j++){
             cout<<"D";
         }
+        cout<<" "<<i;
         for(int j=0;j<d;j++){
             printf(" %.10f",fRand(0.0,1.0));
         }
@@ -132,6 +133,7 @@ void printSphere(int n, int d, string &name)
         for(int j=0;j<d;j++){
             cout<<"D";
         }
+        cout<<" "<<i;
         vector<double> coords(d,1.0);
         while(lenSq(coords)>1.0){
             for(int j=0;j<d;j++){
@@ -156,6 +158,7 @@ void printSphereSurface(int n, int d, string &name)
         for(int j=0;j<d;j++){
             cout<<"D";
         }
+        cout<<" "<<i;
         vector<double> coords(d,1.0);
         double len;
         while( (len=lenSq(coords))>1.0){
@@ -182,6 +185,7 @@ void printEdge(int n, int d, string &name)
         for(int j=0;j<d;j++){
             cout<<"D";
         }
+        cout<<" "<<i;
         vector<double> coords(d,0.0);
         double coord = fRand(0.0,1.0);
         for(int j=0;j<d;j++){
@@ -210,6 +214,7 @@ void printClusters(int n, int d, string &name)
         for(int j=0;j<d;j++){
             cout<<"D";
         }
+        cout<<" "<<i;
 
         vector<double> coords(d,0.0);
         for(int j=0;j<d;j++){
@@ -264,6 +269,7 @@ void printSausage(int n, int d, string &name)
         for(int j=0;j<d;j++){
             cout<<"D";
         }
+        cout<<" "<<i;
 
         for(int j=0;j<d;j++){
             printf(" %.10f",prevPoints[i][j]);
@@ -284,6 +290,7 @@ void printGrid(int n, int d, string &name)
         for(int j=0;j<d;j++){
             cout<<"D";
         }
+        cout<<" "<<i;
         for(int j=0;j<d;j++){
             printf(" %.1f",gridPos[j]*1.0);
         }
