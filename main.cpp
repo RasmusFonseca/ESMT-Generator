@@ -21,10 +21,10 @@ int printUsage(char* progName)
     cout<<"\tgrid : the vertices of a cubic grid of width floor(n^(1/d))"<<endl;
     cout<<endl;
     cout<<"Options can be any list of:"<<endl;
-    cout<<"\t-n <int> : number of points (standard=10)"<<endl;
-    cout<<"\t-d <int> : dimension of points (standard=2)"<<endl;
-    cout<<"\t-s <int> : seed for generating random points (standard=time())"<<endl;
-    cout<<"\t-name <string> : name of point set (standard=\"\")"<<endl;
+    cout<<"\t-n <int> : number of points (default=10)"<<endl;
+    cout<<"\t-d <int> : dimension of points (default=2)"<<endl;
+    cout<<"\t-s <int> : seed for generating random points (default=time())"<<endl;
+    cout<<"\t-name <string> : name of point set (default=\"\")"<<endl;
 
     return -1;
 }
