@@ -1,5 +1,5 @@
 CXX = clang++
 
-STPGenerator: main.cpp
+ESMTGenerator: main.cpp
 	$(CXX) -o $@ $^
 
